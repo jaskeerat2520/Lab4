@@ -1,0 +1,25 @@
+<main class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center">All Animals</h2>
+        </div>
+    </div>
+    <div class="row">
+        {{#each animals}}
+        <div class="col-md-4 mb-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">{{givenName}}</h5>
+                    <p class="card-text">Common Name: {{commonName}}</p>
+                    <p class="card-text">Scientific Name: {{scientificName}}</p>
+                    <p class="card-text">Zoo: {{Zoo}}</p>
+                    <p class="card-text">Gender: {{gender}}</p>
+                    <p class="card-text">Date of Birth: {{dateOfBirth}}</p>
+                    <p class="card-text">Age: {{Age}}</p>
+                    <p class="card-text">Transportable: {{#if IsTransportable}} Yes {{else}} No {{/if}}</p>
+                </div>
+            </div>
+        </div>
+        {{/each}}
+    </div>
+</main>
